@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>FyreZone – Kliens letöltése</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0d12;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      background: #11141a;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    h1 {
+      color: #ff4b4b;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .download-buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .windows {
+      background: #0078d4;
+      color: white;
+    }
+
+    .windows:hover {
+      background: #0061ad;
+    }
+
+    .mac {
+      background: #888;
+      color: white;
+    }
+
+    .mac:hover {
+      background: #666;
+    }
+
+    .help-btn {
+      margin-top: 20px;
+      background: #ff4b4b;
+      color: white;
+    }
+
+    .help-btn:hover {
+      background: #ff2a2a;
+    }
+
+    .info-box {
+      margin-top: 30px;
+      background: #161a22;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .back {
+      margin-top: 30px;
+      display: inline-block;
+      color: #ff4b4b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Kliens letöltése</h1>
+  <p>Töltsd le a saját fejlesztésű kliensünket a játék elkezdéséhez.<br>
+  Új verzió, stabil működés, rengeteg extra funkció.</p>
+
+  <div class="info-box">
+    <p><strong>Jelenleg online:</strong> 1 játékos</p>
+    <p><strong>Legújabb verzió:</strong> 1.4.0</p>
+  </div>
+
+  <div class="download-buttons">
+    <a href="FyreZone-Setup-1.4.0.exe" class="btn windows">Windows</a>
+    <a href="FyreZone-MacOS-1.4.0.dmg" class="btn mac">MacOS</a>
+  </div>
+
+  <a href="#" class="btn help-btn">Segítségkérés</a>
+
+  <br>
+  <a href="index.html" class="back">Vissza a főoldalra</a>
+</div>
+
+</body>
+</html>

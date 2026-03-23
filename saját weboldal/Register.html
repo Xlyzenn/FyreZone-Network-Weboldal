@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Regisztráció</title>
+  <style>
+    body { background:#0b0d12; color:#fff; font-family:Arial; text-align:center; padding-top:60px; }
+    .box { background:#11141a; width:350px; margin:auto; padding:30px; border-radius:10px; }
+    input { width:90%; padding:10px; margin:10px 0; border-radius:6px; border:none; background:#161a22; color:#fff; }
+    button { padding:12px 20px; background:#ff4b4b; border:none; border-radius:6px; color:#fff; cursor:pointer; font-weight:bold; }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Regisztráció</h2>
+  <input id="user" placeholder="Felhasználónév">
+  <input id="pass" type="password" placeholder="Jelszó">
+  <button onclick="reg()">Regisztráció</button>
+  <p id="msg"></p>
+</div>
+
+<script>
+function reg() {
+  const u = document.getElementById("user").value;
+  const p = document.getElementById("pass").value;
+
+  if (!u || !p) {
+    msg.innerText = "Minden mezőt tölts ki!";
+    return;
+  }
+
+  localStorage.setItem("fyre_user", u);
+  localStorage.setItem("fyre_pass", p);
+
+  msg.innerText = "Sikeres regisztráció! Most jelentkezz be.";
+  setTimeout(() => window.location = "login.html", 1500);
+}
+</script>
+
+</body>
+</html>
+<button onclick="logout()">Kijelentkezés</button>
+
+<script>
+function logout() {
+  localStorage.removeItem("loggedIn");
+  window.location = "login.html";
+}
+</script>

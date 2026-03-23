@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>ZoneCenter</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f4f4f4;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+position:fixed;
+width:230px;
+height:100%;
+background:#14182b;
+color:white;
+padding-top:20px;
+}
+
+.logo{
+font-size:22px;
+text-align:center;
+margin-bottom:30px;
+font-weight:bold;
+color:#ff3b3b;
+}
+
+.menu a{
+display:block;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+}
+
+.menu a:hover{
+background:#1f2440;
+}
+
+/* MAIN */
+
+.main{
+margin-left:230px;
+padding:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-bottom:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+border-bottom:4px solid red;
+}
+
+.card h2{
+margin:0;
+color:red;
+}
+
+.box{
+background:white;
+padding:20px;
+border-radius:8px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+th,td{
+padding:10px;
+border-bottom:1px solid #ddd;
+text-align:left;
+}
+
+th{
+background:#f1f1f1;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">ZONECENTER</div>
+
+<div class="menu">
+
+<a href="#">🏠 Főoldal</a>
+<a href="#">💰 Érme feltöltés</a>
+<a href="#">⚡ Érme aktiválás</a>
+<a href="#">💳 Utalás</a>
+<a href="#">🎟 Kuponkód</a>
+<a href="#">⭐ Rangvásárlás</a>
+<a href="#">🚫 Tiltás feloldás</a>
+<a href="#">🏆 Toplisták</a>
+
+</div>
+
+</div>
+
+<div class="main">
+
+<h1>Főoldal</h1>
+
+<div class="cards">
+
+<div class="card">
+<p>Rangod</p>
+<h2>Játékos</h2>
+</div>
+
+<div class="card">
+<p>Érméid</p>
+<h2>0</h2>
+</div>
+
+<div class="card">
+<p>Online játékosok</p>
+<h2>120</h2>
+</div>
+
+<div class="card">
+<p>Regisztrált felhasználók</p>
+<h2>23164</h2>
+</div>
+
+</div>
+
+<div class="box">
+
+<h2>Toplisták</h2>
+
+<table>
+
+<tr>
+<th>Helyezés</th>
+<th>Felhasználónév</th>
+<th>Ölések</th>
+</tr>
+
+<tr>
+<td>#1</td>
+<td>martin11</td>
+<td>4619</td>
+</tr>
+
+<tr>
+<td>#2</td>
+<td>olika010</td>
+<td>4122</td>
+</tr>
+
+<tr>
+<td>#3</td>
+<td>dezydezy102</td>
+<td>3861</td>
+</tr>
+
+<tr>
+<td>#4</td>
+<td>WhyNot</td>
+<td>3115</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>

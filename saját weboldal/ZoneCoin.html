@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>Érme vásárlás</title>
+
+<style>
+
+body{
+background:#2b2f45;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+.container{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:50px;
+flex-wrap:wrap;
+}
+
+.coinbox{
+background:#1e2133;
+padding:25px;
+border-radius:10px;
+width:220px;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.coinbox h2{
+color:gold;
+}
+
+button{
+padding:10px 20px;
+border:none;
+background:#ff3b5c;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff5f7a;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Érme vásárlás</h1>
+
+<div class="container">
+
+<div class="coinbox">
+<h2>100 Coin</h2>
+<p>Ár: 500 Ft</p>
+<button onclick="buyCoin(100)">Vásárlás</button>
+</div>
+
+<div class="coinbox">
+<h2>500 Coin</h2>
+<p>Ár: 2000 Ft</p>
+<button onclick="buyCoin(500)">Vásárlás</button>
+</div>
+
+<div class="coinbox">
+<h2>1000 Coin</h2>
+<p>Ár: 3500 Ft</p>
+<button onclick="buyCoin(1000)">Vásárlás</button>
+</div>
+
+<div class="coinbox">
+<h2>5000 Coin</h2>
+<p>Ár: 12000 Ft</p>
+<button onclick="buyCoin(5000)">Vásárlás</button>
+</div>
+
+</div>
+
+<script>
+
+function buyCoin(amount){
+
+let player = prompt("Add meg a Minecraft neved:");
+
+if(player == null || player == ""){
+alert("Add meg a neved!");
+return;
+}
+
+alert("Sikeres vásárlás!\n\nJátékos: " + player + "\nCoin: " + amount);
+
+}
+
+</script>
+
+</body>
+</html>

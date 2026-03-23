@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Bejelentkezés</title>
+  <style>
+    body { background:#0b0d12; color:#fff; font-family:Arial; text-align:center; padding-top:60px; }
+    .box { background:#11141a; width:350px; margin:auto; padding:30px; border-radius:10px; }
+    input { width:90%; padding:10px; margin:10px 0; border-radius:6px; border:none; background:#161a22; color:#fff; }
+    button { padding:12px 20px; background:#ffd000; border:none; border-radius:6px; color:#000; cursor:pointer; font-weight:bold; }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Bejelentkezés</h2>
+  <input id="user" placeholder="Felhasználónév">
+  <input id="pass" type="password" placeholder="Jelszó">
+  <button onclick="login()">Bejelentkezés</button>
+  <p id="msg"></p>
+</div>
+
+<script>
+function login() {
+  const u = document.getElementById("user").value;
+  const p = document.getElementById("pass").value;
+
+  const ru = localStorage.getItem("fyre_user");
+  const rp = localStorage.getItem("fyre_pass");
+
+  if (u === ru && p === rp) {
+    localStorage.setItem("loggedIn", "true");
+    msg.innerText = "Sikeres bejelentkezés!";
+    setTimeout(() => window.location = "index.html", 1000);
+  } else {
+    msg.innerText = "Hibás adatok!";
+  }
+}
+</script>
+
+</body>
+</html>
